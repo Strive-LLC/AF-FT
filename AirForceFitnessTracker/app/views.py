@@ -44,3 +44,53 @@ def about(request):
             'year':datetime.now().year,
         }
     )
+
+def about(request):
+    """Renders the about page."""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/about.html',
+        {
+            'title':'About',
+            'message':'Your application description page.',
+            'year':datetime.now().year,
+        }
+    )
+def about(request):
+    """Renders the about page."""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/about.html',
+        {
+            'title':'About',
+            'message':'Your application description page.',
+            'year':datetime.now().year,
+        }
+    )
+def about(request):
+    """Renders the about page."""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/about.html',
+        {
+            'title':'About',
+            'message':'Strive Tech LLC.',
+            'year':datetime.now().year,
+        }
+    )
+
+def ProfilePage(request):
+    """Renders the Profile Page"""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/ProfilePage.html',
+        {
+            'title':'ProfilePage',
+            'message':'Your total fitness!',
+            'year':datetime.now().year,
+        }
+    )
